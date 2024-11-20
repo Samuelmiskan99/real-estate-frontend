@@ -21,16 +21,16 @@ const Navbar = () => {
          <div className='container mx-auto flex items-center justify-between py-4 px-6 md:px-20 lg:px-32 bg-transparent'>
             <img src={logo} alt='' />
             <ul className='hidden md:flex gap-7 text-white'>
-               <a href='/' className='cursor-pointer hover:text-gray-400 duration-200'>
+               <a href='#' className='cursor-pointer hover:text-gray-400 duration-200'>
                   Home
                </a>
-               <a href='#About' className='cursor-pointer hover:text-gray-400 duration-200 '>
+               <a href='#about' className='cursor-pointer hover:text-gray-400 duration-200 '>
                   About
                </a>
-               <a href='#Projects' className='cursor-pointer hover:text-gray-400 duration-200'>
+               <a href='#projects' className='cursor-pointer hover:text-gray-400 duration-200'>
                   Projects
                </a>
-               <a href='#Testimony' className='cursor-pointer hover:text-gray-400 duration-200'>
+               <a href='#testimony' className='cursor-pointer hover:text-gray-400 duration-200'>
                   Testimony
                </a>
             </ul>
