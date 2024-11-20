@@ -49,13 +49,13 @@ const Navbar = () => {
                <a onClick={() => setShowNavbar(!showNavbar)} href='#Header' className='px-4 py-2 rounded-full inline-block'>
                   Home
                </a>
-               <a onClick={() => setShowNavbar(!showNavbar)} href='#About' className='px-4 py-2 rounded-full inline-block'>
+               <a onClick={() => setShowNavbar(!showNavbar)} href='#about' className='px-4 py-2 rounded-full inline-block'>
                   About
                </a>
-               <a onClick={() => setShowNavbar(!showNavbar)} href='#Projects' className='px-4 py-2 rounded-full inline-block'>
+               <a onClick={() => setShowNavbar(!showNavbar)} href='#projects' className='px-4 py-2 rounded-full inline-block'>
                   Projects
                </a>
-               <a onClick={() => setShowNavbar(!showNavbar)} href='#Testimony' className='px-4 py-2 rounded-full inline-block'>
+               <a onClick={() => setShowNavbar(!showNavbar)} href='#testimony' className='px-4 py-2 rounded-full inline-block'>
                   Testimony
                </a>
             </ul>
