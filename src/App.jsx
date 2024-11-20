@@ -1,6 +1,8 @@
 import Header from './components/Header';
 import AboutPage from './components/Pages/AboutPage';
+import Contact from './components/Pages/Contact';
 import Projects from './components/Pages/Projects';
+import Testimony from './components/Pages/Testimony';
 
 const App = () => {
    return (
@@ -9,6 +11,8 @@ const App = () => {
             <Header />
             <AboutPage />
             <Projects />
+            <Testimony />
+            <Contact />
          </div>
       </>
    );

@@ -72,7 +72,7 @@ export const projectsData = [
    },
 ];
 
-export const testimonialsData = [
+export const testimonyData = [
    {
       name: 'Donald Jackman',
       title: 'Marketing Manager',

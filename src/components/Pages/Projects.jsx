@@ -39,7 +39,7 @@ const Projects = () => {
          {/* Overlay untuk redup */}
          <div className='absolute inset-0 bg-gray-600 bg-opacity-50'></div>
          {/* Konten utama */}
-         <div className='relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-20 w-full overflow-hidden' id='projects'>
+         <div className='relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-19 w-full overflow-hidden' id='projects'>
             <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center text-white'>
                Project <span className='underline underline-offset-4 decoration-1 under font-light text-gray-600'>Completed</span>
             </h1>
@@ -62,7 +62,7 @@ const Projects = () => {
                            <div className='inline-block bg-white w-3/4 px-4 py-2 shadow-md'>
                               <h2 className='text-xl font-semibold text-gray-800'>{project.title}</h2>
                               <p className='text-sm text-gray-500'>
-                                 {project.price} <span>|</span> {project.location}
+                                 {project.price} <span className='px-1'>|</span> {project.location}
                               </p>
                            </div>
                         </div>

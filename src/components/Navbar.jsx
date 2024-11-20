@@ -33,6 +33,9 @@ const Navbar = () => {
                <a href='#testimony' className='cursor-pointer hover:text-gray-400 duration-200'>
                   Testimony
                </a>
+               <a href='#contact' className='cursor-pointer hover:text-gray-400 duration-200'>
+                  Contact
+               </a>
             </ul>
             <button className='hidden md:block bg-white px-8 py-2 rounded-full'>Sign Up</button>
             <img onClick={() => setShowNavbar(!showNavbar)} src={menu_icon} className='md:hidden w-7 cursor-pointer' />

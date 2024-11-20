@@ -2,7 +2,7 @@ import brand from '../../assets/brand_img.png';
 
 const AboutPage = () => {
    return (
-      <div className='flex flex-col items-center container mx-auto px-6 md:px-16 lg:px-24 py-14 w-full overflow-hidden'>
+      <div className='flex flex-col items-center container mx-auto px-6 md:px-16 lg:px-24 py-14 w-full overflow-hidden' id='about'>
          {/* Header Section */}
          <h1 className='text-3xl sm:text-4xl font-bold mb-6 text-center'>
             About <span className='underline underline-offset-4 decoration-1 under font-light'>Our Brand</span>

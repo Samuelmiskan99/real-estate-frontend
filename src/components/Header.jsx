@@ -1,7 +1,7 @@
 import Navbar from './Navbar';
 const Header = () => {
    return (
-      <div className='h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{ backgroundImage: 'url("/header_img.png")' }}>
+      <div className='h-screen mb-4 bg-cover bg-center flex items-center w-full overflow-hidden' style={{ backgroundImage: 'url("/house-bg.jpg")' }}>
          <Navbar />
          <div className='container mx-auto text-center py-4 px-6 md:px-20'>
             <h2 className='text-5xl sm:text-6xl md:text-[82px] inline-block max-w-3xl font-semibold pt-20 text-white'>Searching for a dream house?</h2>
