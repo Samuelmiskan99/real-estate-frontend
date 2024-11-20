@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { projectsData } from '../../assets/assets';
 import left_arrow from '../../assets/left_arrow.svg';
 import right_arrow from '../../assets/right_arrow.svg';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
    const [currentProject, setCurrentProject] = useState(0);
@@ -39,7 +40,14 @@ const Projects = () => {
          {/* Overlay untuk redup */}
          <div className='absolute inset-0 bg-gray-600 bg-opacity-50'></div>
          {/* Konten utama */}
-         <div className='relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-19 w-full overflow-hidden' id='projects'>
+         <motion.div
+            initial={{ opacity: 0, x: -200 }}
+            animate={{ opacity: 1.5 }}
+            transition={{ duration: 1 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            className='relative container mx-auto py-4 pt-20 px-6 md:px-20 lg:px-32 my-19 w-full overflow-hidden'
+            id='projects'>
             <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center text-white'>
                Project <span className='underline underline-offset-4 decoration-1 under font-light text-gray-600'>Completed</span>
             </h1>
@@ -70,7 +78,7 @@ const Projects = () => {
                   ))}
                </div>
             </div>
-         </div>
+         </motion.div>
       </div>
    );
 };

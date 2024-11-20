@@ -1,3 +1,4 @@
+import Footer from './components/Footer';
 import Header from './components/Header';
 import AboutPage from './components/Pages/AboutPage';
 import Contact from './components/Pages/Contact';
@@ -13,6 +14,7 @@ const App = () => {
             <Projects />
             <Testimony />
             <Contact />
+            <Footer />
          </div>
       </>
    );

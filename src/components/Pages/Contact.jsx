@@ -1,6 +1,14 @@
+import { motion } from 'framer-motion';
 const Contact = () => {
    return (
-      <div className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden' id='contact'>
+      <motion.div
+         initial={{ opacity: 0, x: -200 }}
+         animate={{ opacity: 1.5 }}
+         transition={{ duration: 1 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         viewport={{ once: true }}
+         className='text-center p-6 py-20 lg:px-32 w-full overflow-hidden'
+         id='contact'>
          <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>
             Lets Connect <span className='underline underline-offset-4 decoration-1 under font-light'>With Us</span>
          </h1>
@@ -20,9 +28,9 @@ const Contact = () => {
                Message
                <textarea className='w-full border border-gray-300 rounded py-3 px-4 mt-2 h-48 resize-none' name='Message' placeholder='Message' required></textarea>
             </div>
-            <button className='bg-blue-600 text-white py-2 px-12 mb-10 rounded'>Send Message</button>
+            <button className='mt-6 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 shadow-lg transition duration-300'>Send Message</button>
          </form>
-      </div>
+      </motion.div>
    );
 };
 

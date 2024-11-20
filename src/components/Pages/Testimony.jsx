@@ -1,8 +1,16 @@
 import { testimonyData } from '../../assets/assets';
 import star_icon from '../../assets/star_icon.svg';
+import { motion } from 'framer-motion';
 const Testimony = () => {
    return (
-      <div className='container mx-auto lg:px-32 py-10 w-full overflow-hidden mt-10' id='testimony'>
+      <motion.div
+         initial={{ opacity: 0, x: 100 }}
+         animate={{ opacity: 1.5 }}
+         transition={{ duration: 1 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         viewport={{ once: true }}
+         className='container mx-auto lg:px-32 py-10 w-full overflow-hidden mt-10'
+         id='testimony'>
          <h1 className='text-2xl sm:text-4xl font-bold mb-2 text-center'>
             Customers <span className='underline underline-offset-4 decoration-1 under font-light'>Testimony</span>
          </h1>
@@ -22,7 +30,7 @@ const Testimony = () => {
                </div>
             ))}
          </div>
-      </div>
+      </motion.div>
    );
 };
 

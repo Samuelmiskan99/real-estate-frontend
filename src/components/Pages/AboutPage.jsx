@@ -1,8 +1,16 @@
 import brand from '../../assets/brand_img.png';
+import { motion } from 'framer-motion';
 
 const AboutPage = () => {
    return (
-      <div className='flex flex-col items-center container mx-auto px-6 md:px-16 lg:px-24 py-14 w-full overflow-hidden' id='about'>
+      <motion.div
+         initial={{ opacity: 0, x: 100 }}
+         animate={{ opacity: 1.5 }}
+         transition={{ duration: 1 }}
+         whileInView={{ opacity: 1, x: 0 }}
+         viewport={{ once: true }}
+         className='flex flex-col items-center container mx-auto px-6 md:px-16 lg:px-24 py-14 w-full overflow-hidden'
+         id='about'>
          {/* Header Section */}
          <h1 className='text-3xl sm:text-4xl font-bold mb-6 text-center'>
             About <span className='underline underline-offset-4 decoration-1 under font-light'>Our Brand</span>
@@ -47,7 +55,7 @@ const AboutPage = () => {
                <button className='mt-6 bg-blue-600 text-white px-6 py-3 rounded-full hover:bg-blue-700 shadow-lg transition duration-300'>Learn More</button>
             </div>
          </div>
-      </div>
+      </motion.div>
    );
 };
 
